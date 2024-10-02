@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex justify-around items-start bg-gray-50 p-8 rounded-lg shadow-md w-5/6 mx-auto">
+        <!-- Bus Info Section -->
+        <div class="w-5/6 space-y-8">
+            <div class="flex justify-between items-center gap-10">
+                <!-- Logo -->
+                <div>
+                    <img class="w-20 h-auto" src="./bus-logo.png" alt="Bus Logo">
+                </div>
+                <!-- Bus Info -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">Greenline Paribahan</h2>
+                    <p class="text-lg text-gray-500">Coach-009-WEB | AC Business</p>
+                </div>
+                <!-- Seats Info -->
+                <div>
+                    <div class="flex items-center bg-green-100 text-green-700 border-none rounded-md p-4 shadow-inner">
+                        <img class="w-8 h-8 mr-3" src="./seat-green-filled.png" alt="Seats">
+                        <div>
+                            <p class="text-xl"><span class="font-bold">40</span> seats left</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Route</h2>
+                    <p class="text-gray-600">Dhaka - Sylhet</p>
+                </div>
+                <div class="flex justify-between items-center border-b py-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Departure Time</h2>
+                    <p class="text-gray-600">9:00 PM</p>
+                </div>
+                <div class="py-4 flex justify-between">
+                    <div class="flex flex-col items-start bg-white shadow-md rounded-lg p-4 text-gray-600">
+                        <p class="font-medium">Boarding Point</p>
+                        <p>Laxmipur</p>
+                    </div>
+                    <div class="flex flex-col items-start bg-white shadow-md rounded-lg p-4 text-gray-600 mx-4">
+                        <p class="font-medium">Dropping Point</p>
+                        <p>Bogura</p>
+                    </div>
+                    <div class="flex flex-col items-start bg-white shadow-md rounded-lg p-4 text-gray-600">
+                        <p class="font-medium">Est. Time</p>
+                        <p>11 Hours</p>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    
+        <!-- Fare Section -->
+        <div class="text-center bg-white rounded-lg p-6 shadow-lg">
+            <img class="w-16 mx-auto mb-3" src="./fare.png" alt="Taka">
+            <h2 class="text-4xl font-semibold text-gray-800"><span>550</span> Taka</h2>
+            <p class="text-xl text-gray-600">Per seat</p>
+        </div>
+    </div>
+    
+</body>
+</html>
