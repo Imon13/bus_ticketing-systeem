@@ -25,7 +25,7 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <div class="flex items-center gap-2 rounded-md bg-green-300 w-30 p-5">
+                <div class="flex items-center gap-2 rounded-md bg-gray-300 w-30 p-5">
                     <h2>Bus</h2>
                     <img class="w-5" src="./images/bus-logo.png" alt="">
                 </div>
@@ -39,7 +39,7 @@
                     Yes, you can run unit tests and view the results directly within the app. The integrated testing
                     features allow for a streamlined experience.
                 </p>
-                <button class="btn btn-outline btn-success">Buy Ticket</button>
+                <button id="buy-btn" class="btn btn-outline btn-success">Buy Ticket</button>
             </div>
 
         </section>
@@ -89,7 +89,8 @@
             <div class="w-5/6 mx-auto">
                 <div class="text-center">
                     <h2 class="text-2xl font-bold mt-3">P.H Paribahan</h2>
-                    <p class="text-xl font-semibold w-1/3 mx-auto mt-3 ">Yes, you can run unit tests and view the results directly
+                    <p class="text-xl font-semibold w-1/3 mx-auto mt-3 ">Yes, you can run unit tests and view the
+                        results directly
                         within the app. The integrated
                         testing features allow for a streamlined
                     </p>
@@ -110,15 +111,17 @@
                             </div>
                             <!-- Seats Info -->
                             <div>
-                                <div class="flex items-center bg-green-100 text-green-700 border-none rounded-md p-4 shadow-inner">
+                                <div
+                                    class="flex items-center bg-gray-100 text-gray-700 border-none rounded-md p-4 shadow-inner">
                                     <img class="w-8 h-8 mr-3" src="./images/seat-gray.png" alt="Seats">
                                     <div>
-                                        <p class="text-xl"><span class="font-bold">40</span> seats left</p>
+                                        <p class="text-xl"><span id="seat-left" class="font-bold">40</span> seats left
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                
+
                         <div class="bg-white p-6 rounded-lg shadow-lg">
                             <div class="flex justify-between items-center border-b pb-4">
                                 <h2 class="text-xl font-semibold text-gray-800">Route</h2>
@@ -133,7 +136,8 @@
                                     <p class="font-medium">Boarding Point</p>
                                     <p>Laxmipur</p>
                                 </div>
-                                <div class="flex flex-col items-start bg-white shadow-md rounded-lg p-4 text-gray-600 mx-4">
+                                <div
+                                    class="flex flex-col items-start bg-white shadow-md rounded-lg p-4 text-gray-600 mx-4">
                                     <p class="font-medium">Dropping Point</p>
                                     <p>Bogura</p>
                                 </div>
@@ -142,12 +146,12 @@
                                     <p>11 Hours</p>
                                 </div>
                             </div>
-                            
-                            
-                            
+
+
+
                         </div>
                     </div>
-                
+
                     <!-- Fare Section -->
                     <div class="text-center bg-white rounded-lg p-6 shadow-lg">
                         <img class="w-16 mx-auto mb-3" src="./images/fare.png" alt="Taka">
@@ -155,9 +159,229 @@
                         <p class="text-xl text-gray-600">Per seat</p>
                     </div>
                 </div>
-                
+
 
             </div>
+        </section>
+        <section id="targetSection" class="w-5/6 mx-auto mt-12">
+            <div class="flex gap-8 p-6">
+                <!-- Left side -->
+                <div class="w-1/2">
+                    <h2 class="text-xl font-bold mb-6">Select your seat</h2>
+                    <div class="flex justify-between">
+                        <div class="flex items-center gap-3">
+                            <img src="./images/seat-gray.png" alt="Available Seat" class="w-6 h-6">
+                            <p class="text-gray-600">Available</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img src="./images/seat-gray.png" alt="Selected Seat" class="w-6 h-6">
+                            <p class="text-gray-600">Selected</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full">
+                        <h1 class="text-2xl font-bold text-center mb-4">Bus Seat Layout</h1>
+
+                        <!-- Row A -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">A</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">A1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">A2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">A3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">A4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row B -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">B</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">B1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">B2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">B3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">B4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row C -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">C</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">C1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">C2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">C3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">C4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row D -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">D</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">D1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">D2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">D3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">D4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row E -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">E</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">E1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">E2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">E3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">E4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row F -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">F</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">F1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">F2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">F3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">F4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row G -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">G</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">G1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">G2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">G3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">G4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row H -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">H</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">H1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">H2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">H3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">H4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row I -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">I</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">I1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">I2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">I3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">I4</button>
+                            </div>
+                        </div>
+
+                        <!-- Row J -->
+                        <div class="flex items-center mb-4">
+                            <button
+                                class="w-12 h-12 bg-gray-300 text-xl font-bold flex justify-center items-center rounded-md">J</button>
+                            <div class="flex space-x-4 ml-4">
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">J1</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">J2</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">J3</button>
+                                <button
+                                    class="allbtn w-12 h-12 bg-gray-500 text-white font-bold flex justify-center items-center rounded-md">J4</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- Right side -->
+                <div class="w-1/2 p-6 bg-white shadow-lg rounded-lg">
+                    <h2 class="text-xl font-bold mb-4">Select your seat</h2>
+
+                    <div class="p-6 bg-gray-100 rounded-lg">
+                        <div class="flex gap-6 mb-4">
+                            <h2 class="text-lg font-semibold">Seat <span id="selected-seat">0</span></h2>
+                            <p class="text-lg">Class</p>
+                            <p class="text-lg">Price</p>
+                        </div>
+
+                        <!-- selected seats will go here -->
+                        <div class="mb-6">
+                            <!-- Add dynamically selected seat content here -->
+                        </div>
+
+                        <h2 class="text-lg font-bold mb-4">
+                            Total price <span id="total-price" class="text-red-600">0</span> tk
+                        </h2>
+
+                        <div class="flex items-center gap-4 mb-4">
+                            <input id="input" type="text" placeholder="Have Coupon?"
+                                class="border border-gray-300 p-2 rounded w-full">
+                            <button id="apply"
+                                class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">
+                                Apply
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <p class="text-lg font-bold mt-4">
+                        Grand Total <span id="grand-total" class="text-red-600">0</span> tk
+                    </p>
+                </div>
+            </div>
+
         </section>
 
     </main>
